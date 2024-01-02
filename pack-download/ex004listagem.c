@@ -1,0 +1,52 @@
+#import <stdio.h>
+#include <locale.h>
+void main() {
+    char nome01[30], nome02[30], nome03[30], nome04[30];
+    char sex01, sex02, sex03, sex04;
+    float nota01, nota02, nota03, nota04;
+    printf("<<< EX004 - Listagem >>>\n");
+    printf("\nCadastrando a primeira pessoa:\n");
+    printf("--------------------------------\n");
+    fflush(stdin);
+    printf("Nome: ");
+    gets(nome01);
+    printf("SEXO [M/F]: ");
+    sex01 = getchar();
+    printf("NOTA: ");
+    scanf("%f", &nota01);
+    printf("\nCadastrando a segunda pessoa:\n");
+    printf("--------------------------------\n");
+    printf("Nome: ");
+    fflush(stdin);
+    gets(nome02);
+    printf("SEXO [M/F]: ");
+    sex02 = getchar();
+    printf("NOTA: ");
+    scanf("%f", &nota02);
+    printf("\nCadastrando a terceira pessoa:\n");
+    printf("--------------------------------\n");
+    printf("Nome: ");
+    fflush(stdin);
+    gets(nome03);
+    printf("SEXO [M/F]: ");
+    sex03 = getchar();
+    printf("NOTA: ");
+    scanf("%f", &nota03);
+    printf("\nCadastrando a quarta pessoa:\n");
+    printf("--------------------------------\n");
+    printf("Nome: ");
+    fflush(stdin);
+    gets(nome04);
+    printf("SEXO [M/F]: ");
+    sex04 = getchar();
+    printf("NOTA: ");
+    scanf("%f", &nota04);
+    printf("\nListagem completa\n");
+    printf("--------------------------------\n");
+    printf("NOME                          SEXO\t  NOTA \n");
+    printf("%-30s  %c\t%6.1f \n", nome01, sex01, nota01);
+    printf("%-30s  %c\t%6.1f \n", nome02, sex02, nota02);
+    printf("%-30s  %c\t%6.1f \n", nome03, sex03, nota03);
+    printf("%-30s  %c\t%6.1f \n", nome04, sex04, nota04);
+    printf("--------------------------------\n");
+}
